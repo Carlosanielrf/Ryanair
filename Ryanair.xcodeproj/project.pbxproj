@@ -1,0 +1,1008 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6B12EA132CE22AE7009E21D9 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B12EA122CE22AE1009E21D9 /* Presenter.swift */; };
+		6B12EA152CE22B67009E21D9 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B12EA142CE22B63009E21D9 /* BaseView.swift */; };
+		6B12EA182CE22BDD009E21D9 /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B12EA172CE22BD8009E21D9 /* BasePresenter.swift */; };
+		6B12EA1B2CE22DA4009E21D9 /* SearchMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B12EA1A2CE22DA1009E21D9 /* SearchMapper.swift */; };
+		6B12EA1D2CE22DC0009E21D9 /* SearchMapperProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B12EA1C2CE22DB7009E21D9 /* SearchMapperProtocol.swift */; };
+		6B12EA202CE23194009E21D9 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 6B12EA1F2CE23194009E21D9 /* Swinject */; };
+		6B12EA232CE231A0009E21D9 /* SwinjectStoryboard in Frameworks */ = {isa = PBXBuildFile; productRef = 6B12EA222CE231A0009E21D9 /* SwinjectStoryboard */; };
+		6B12EA252CE23420009E21D9 /* UseCasesAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B12EA242CE2341B009E21D9 /* UseCasesAssembly.swift */; };
+		6B12EA272CE234B8009E21D9 /* ViewControllerAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B12EA262CE234B0009E21D9 /* ViewControllerAssembly.swift */; };
+		6B12EA292CE2361B009E21D9 /* MappersAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B12EA282CE23611009E21D9 /* MappersAssembly.swift */; };
+		6B12EA2D2CE23B19009E21D9 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B12EA2C2CE23B18009E21D9 /* AppCoordinator.swift */; };
+		6B12EA302CE23E54009E21D9 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B12EA2F2CE23E4E009E21D9 /* Navigator.swift */; };
+		6B12EA332CE23EA2009E21D9 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B12EA322CE23E9E009E21D9 /* BaseViewController.swift */; };
+		6B12EA362CE2432B009E21D9 /* ProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B12EA352CE24327009E21D9 /* ProfileCoordinator.swift */; };
+		6B3DA8002CE5101E008435FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3DA7FF2CE5101E008435FF /* AppDelegate.swift */; };
+		6B487A8529A22D56000E959F /* SearchFlightsServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B487A8429A22D56000E959F /* SearchFlightsServiceTests.swift */; };
+		6B5760C3298FB0E500E524B2 /* StationsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5760C2298FB0E500E524B2 /* StationsService.swift */; };
+		6B5760C5298FB23600E524B2 /* UseCaseGetStations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5760C4298FB23600E524B2 /* UseCaseGetStations.swift */; };
+		6B5760C7298FB32A00E524B2 /* StationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5760C6298FB32A00E524B2 /* StationsViewController.swift */; };
+		6B5760CB298FB41C00E524B2 /* StationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5760CA298FB41C00E524B2 /* StationCell.swift */; };
+		6B5760CE298FB53A00E524B2 /* StationsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5760CD298FB53A00E524B2 /* StationsPresenter.swift */; };
+		6B5760D0298FB5F700E524B2 /* StationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5760CF298FB5F700E524B2 /* StationsView.swift */; };
+		6B5760D5298FBA0500E524B2 /* FormPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5760D4298FBA0500E524B2 /* FormPresenter.swift */; };
+		6B661ADE2986C92100226DED /* Trips.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B661ADD2986C92100226DED /* Trips.swift */; };
+		6B661AE02986C9E400226DED /* PathBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B661ADF2986C9E400226DED /* PathBuilder.swift */; };
+		6B661AE22986CA6800226DED /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B661AE12986CA6800226DED /* BaseService.swift */; };
+		6B661AE42986D14100226DED /* DataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B661AE32986D14100226DED /* DataRepository.swift */; };
+		6B661AE72986D22800226DED /* ServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B661AE62986D22800226DED /* ServiceAssembly.swift */; };
+		6B661AEA2986D28600226DED /* UseCaseSearchFlights.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B661AE92986D28600226DED /* UseCaseSearchFlights.swift */; };
+		6B6EB1B429957F7A009C5C83 /* Search.json in Resources */ = {isa = PBXBuildFile; fileRef = 6B6EB1B329957F7A009C5C83 /* Search.json */; };
+		6BC9CE9E29944A1800A15E20 /* SearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC9CE9D29944A1800A15E20 /* SearchPresenter.swift */; };
+		6BC9CEA129944A8600A15E20 /* SearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC9CEA029944A8600A15E20 /* SearchModel.swift */; };
+		6BC9CEA429944EE100A15E20 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC9CEA329944EE100A15E20 /* DateFormatter.swift */; };
+		6BE342C32CE2823100AEEF3D /* RepositoryAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE342C22CE2822A00AEEF3D /* RepositoryAssembly.swift */; };
+		6BE342C52CE2886C00AEEF3D /* ProfileCoordinatorAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE342C42CE2886500AEEF3D /* ProfileCoordinatorAssembly.swift */; };
+		6BE5B80C2992F2D200C80A2C /* FormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE5B80B2992F2D200C80A2C /* FormView.swift */; };
+		6BE5B80F2992F6B400C80A2C /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE5B80E2992F6B400C80A2C /* SearchViewController.swift */; };
+		6BE5B8122992F8D500C80A2C /* SearchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BE5B8112992F8D500C80A2C /* SearchCell.xib */; };
+		6BE5B8142992FA5900C80A2C /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE5B8132992FA5900C80A2C /* SearchCell.swift */; };
+		6BE5B8162992FEA600C80A2C /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE5B8152992FEA600C80A2C /* SearchView.swift */; };
+		6BF2F7502991A9DF0084B307 /* StationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BF2F74F2991A9DF0084B307 /* StationCell.xib */; };
+		6BF2F7532991AF100084B307 /* StationSelectionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BF2F7522991AF100084B307 /* StationSelectionType.swift */; };
+		6BF40E822985309F0042DEDB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BF40E812985309F0042DEDB /* SceneDelegate.swift */; };
+		6BF40E842985309F0042DEDB /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BF40E832985309F0042DEDB /* FormViewController.swift */; };
+		6BF40E872985309F0042DEDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BF40E852985309F0042DEDB /* Main.storyboard */; };
+		6BF40E89298530A00042DEDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BF40E88298530A00042DEDB /* Assets.xcassets */; };
+		6BF40E97298530A00042DEDB /* RyanairTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BF40E96298530A00042DEDB /* RyanairTests.swift */; };
+		6BF40EA1298530A00042DEDB /* RyanairUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BF40EA0298530A00042DEDB /* RyanairUITests.swift */; };
+		6BF40EA3298530A00042DEDB /* RyanairUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BF40EA2298530A00042DEDB /* RyanairUITestsLaunchTests.swift */; };
+		6BF40EB22985315D0042DEDB /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BF40EB12985315D0042DEDB /* Station.swift */; };
+		6BF40EB5298531820042DEDB /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 6BF40EB4298531820042DEDB /* Alamofire */; };
+		6BF40EB9298537A40042DEDB /* SearchFlightsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BF40EB8298537A40042DEDB /* SearchFlightsService.swift */; };
+		6BF40EBB298538180042DEDB /* FlightSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BF40EBA298538180042DEDB /* FlightSearch.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6BF40E93298530A00042DEDB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6BF40E742985309F0042DEDB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6BF40E7B2985309F0042DEDB;
+			remoteInfo = Ryanair;
+		};
+		6BF40E9D298530A00042DEDB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6BF40E742985309F0042DEDB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6BF40E7B2985309F0042DEDB;
+			remoteInfo = Ryanair;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6B12EA122CE22AE1009E21D9 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		6B12EA142CE22B63009E21D9 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		6B12EA172CE22BD8009E21D9 /* BasePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
+		6B12EA1A2CE22DA1009E21D9 /* SearchMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMapper.swift; sourceTree = "<group>"; };
+		6B12EA1C2CE22DB7009E21D9 /* SearchMapperProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMapperProtocol.swift; sourceTree = "<group>"; };
+		6B12EA242CE2341B009E21D9 /* UseCasesAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCasesAssembly.swift; sourceTree = "<group>"; };
+		6B12EA262CE234B0009E21D9 /* ViewControllerAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerAssembly.swift; sourceTree = "<group>"; };
+		6B12EA282CE23611009E21D9 /* MappersAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MappersAssembly.swift; sourceTree = "<group>"; };
+		6B12EA2C2CE23B18009E21D9 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		6B12EA2F2CE23E4E009E21D9 /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
+		6B12EA322CE23E9E009E21D9 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		6B12EA352CE24327009E21D9 /* ProfileCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCoordinator.swift; sourceTree = "<group>"; };
+		6B3DA7FF2CE5101E008435FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6B487A8429A22D56000E959F /* SearchFlightsServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFlightsServiceTests.swift; sourceTree = "<group>"; };
+		6B5760C2298FB0E500E524B2 /* StationsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsService.swift; sourceTree = "<group>"; };
+		6B5760C4298FB23600E524B2 /* UseCaseGetStations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseGetStations.swift; sourceTree = "<group>"; };
+		6B5760C6298FB32A00E524B2 /* StationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsViewController.swift; sourceTree = "<group>"; };
+		6B5760CA298FB41C00E524B2 /* StationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationCell.swift; sourceTree = "<group>"; };
+		6B5760CD298FB53A00E524B2 /* StationsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsPresenter.swift; sourceTree = "<group>"; };
+		6B5760CF298FB5F700E524B2 /* StationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsView.swift; sourceTree = "<group>"; };
+		6B5760D4298FBA0500E524B2 /* FormPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormPresenter.swift; sourceTree = "<group>"; };
+		6B661ADD2986C92100226DED /* Trips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trips.swift; sourceTree = "<group>"; };
+		6B661ADF2986C9E400226DED /* PathBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathBuilder.swift; sourceTree = "<group>"; };
+		6B661AE12986CA6800226DED /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		6B661AE32986D14100226DED /* DataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRepository.swift; sourceTree = "<group>"; };
+		6B661AE62986D22800226DED /* ServiceAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceAssembly.swift; sourceTree = "<group>"; };
+		6B661AE92986D28600226DED /* UseCaseSearchFlights.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseSearchFlights.swift; sourceTree = "<group>"; };
+		6B6EB1B329957F7A009C5C83 /* Search.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Search.json; sourceTree = "<group>"; };
+		6BC9CE9D29944A1800A15E20 /* SearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPresenter.swift; sourceTree = "<group>"; };
+		6BC9CEA029944A8600A15E20 /* SearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchModel.swift; sourceTree = "<group>"; };
+		6BC9CEA329944EE100A15E20 /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
+		6BE342C22CE2822A00AEEF3D /* RepositoryAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryAssembly.swift; sourceTree = "<group>"; };
+		6BE342C42CE2886500AEEF3D /* ProfileCoordinatorAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCoordinatorAssembly.swift; sourceTree = "<group>"; };
+		6BE5B80B2992F2D200C80A2C /* FormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormView.swift; sourceTree = "<group>"; };
+		6BE5B80E2992F6B400C80A2C /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		6BE5B8112992F8D500C80A2C /* SearchCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchCell.xib; sourceTree = "<group>"; };
+		6BE5B8132992FA5900C80A2C /* SearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
+		6BE5B8152992FEA600C80A2C /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		6BF2F74F2991A9DF0084B307 /* StationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StationCell.xib; sourceTree = "<group>"; };
+		6BF2F7522991AF100084B307 /* StationSelectionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationSelectionType.swift; sourceTree = "<group>"; };
+		6BF40E7C2985309F0042DEDB /* Ryanair.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ryanair.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BF40E812985309F0042DEDB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6BF40E832985309F0042DEDB /* FormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
+		6BF40E862985309F0042DEDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6BF40E88298530A00042DEDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6BF40E8D298530A00042DEDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BF40E92298530A00042DEDB /* RyanairTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RyanairTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BF40E96298530A00042DEDB /* RyanairTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RyanairTests.swift; sourceTree = "<group>"; };
+		6BF40E9C298530A00042DEDB /* RyanairUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RyanairUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BF40EA0298530A00042DEDB /* RyanairUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RyanairUITests.swift; sourceTree = "<group>"; };
+		6BF40EA2298530A00042DEDB /* RyanairUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RyanairUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6BF40EB12985315D0042DEDB /* Station.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
+		6BF40EB8298537A40042DEDB /* SearchFlightsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFlightsService.swift; sourceTree = "<group>"; };
+		6BF40EBA298538180042DEDB /* FlightSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightSearch.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6BF40E792985309F0042DEDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BF40EB5298531820042DEDB /* Alamofire in Frameworks */,
+				6B12EA232CE231A0009E21D9 /* SwinjectStoryboard in Frameworks */,
+				6B12EA202CE23194009E21D9 /* Swinject in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BF40E8F298530A00042DEDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BF40E99298530A00042DEDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6B12EA112CE22ADD009E21D9 /* Bases */ = {
+			isa = PBXGroup;
+			children = (
+				6B12EA342CE23EA4009E21D9 /* ViewController */,
+				6B12EA312CE23E86009E21D9 /* Presenter */,
+			);
+			path = Bases;
+			sourceTree = "<group>";
+		};
+		6B12EA192CE22CF4009E21D9 /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				6B12EA1C2CE22DB7009E21D9 /* SearchMapperProtocol.swift */,
+				6B12EA1A2CE22DA1009E21D9 /* SearchMapper.swift */,
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
+		6B12EA2A2CE23AB5009E21D9 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				6BE342C42CE2886500AEEF3D /* ProfileCoordinatorAssembly.swift */,
+				6BE342C22CE2822A00AEEF3D /* RepositoryAssembly.swift */,
+				6B12EA282CE23611009E21D9 /* MappersAssembly.swift */,
+				6B12EA262CE234B0009E21D9 /* ViewControllerAssembly.swift */,
+				6B12EA242CE2341B009E21D9 /* UseCasesAssembly.swift */,
+				6B661AE62986D22800226DED /* ServiceAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		6B12EA2B2CE23B11009E21D9 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				6B12EA352CE24327009E21D9 /* ProfileCoordinator.swift */,
+				6B12EA2C2CE23B18009E21D9 /* AppCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		6B12EA2E2CE23E49009E21D9 /* Navigator */ = {
+			isa = PBXGroup;
+			children = (
+				6B12EA2F2CE23E4E009E21D9 /* Navigator.swift */,
+			);
+			path = Navigator;
+			sourceTree = "<group>";
+		};
+		6B12EA312CE23E86009E21D9 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				6B12EA122CE22AE1009E21D9 /* Presenter.swift */,
+				6B12EA172CE22BD8009E21D9 /* BasePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		6B12EA342CE23EA4009E21D9 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6B12EA322CE23E9E009E21D9 /* BaseViewController.swift */,
+				6B12EA142CE22B63009E21D9 /* BaseView.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		6B487A8329A22D48000E959F /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				6B487A8429A22D56000E959F /* SearchFlightsServiceTests.swift */,
+			);
+			path = Business;
+			sourceTree = "<group>";
+		};
+		6B5760C0298E7B0C00E524B2 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				6B12EA112CE22ADD009E21D9 /* Bases */,
+				6BE5B80D2992F6A700C80A2C /* Search */,
+				6B5760C8298FB40100E524B2 /* Stations */,
+				6B5760C1298E7B1800E524B2 /* Main */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		6B5760C1298E7B1800E524B2 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				6BF40E832985309F0042DEDB /* FormViewController.swift */,
+				6B5760D4298FBA0500E524B2 /* FormPresenter.swift */,
+				6BE5B80B2992F2D200C80A2C /* FormView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		6B5760C8298FB40100E524B2 /* Stations */ = {
+			isa = PBXGroup;
+			children = (
+				6B5760CC298FB52800E524B2 /* Group */,
+				6B5760C9298FB41000E524B2 /* Cell */,
+			);
+			path = Stations;
+			sourceTree = "<group>";
+		};
+		6B5760C9298FB41000E524B2 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				6B5760CA298FB41C00E524B2 /* StationCell.swift */,
+				6BF2F74F2991A9DF0084B307 /* StationCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		6B5760CC298FB52800E524B2 /* Group */ = {
+			isa = PBXGroup;
+			children = (
+				6BF2F7512991AEFC0084B307 /* Models */,
+				6B5760C6298FB32A00E524B2 /* StationsViewController.swift */,
+				6B5760CD298FB53A00E524B2 /* StationsPresenter.swift */,
+				6B5760CF298FB5F700E524B2 /* StationsView.swift */,
+			);
+			path = Group;
+			sourceTree = "<group>";
+		};
+		6B661AE52986D20D00226DED /* Container */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Container;
+			sourceTree = "<group>";
+		};
+		6B661AE82986D26700226DED /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				6B661AE92986D28600226DED /* UseCaseSearchFlights.swift */,
+				6B5760C4298FB23600E524B2 /* UseCaseGetStations.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		6BC9CE9F29944A6E00A15E20 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6BC9CEA029944A8600A15E20 /* SearchModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6BC9CEA229944ED600A15E20 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				6BC9CEA329944EE100A15E20 /* DateFormatter.swift */,
+				6B6EB1B329957F7A009C5C83 /* Search.json */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		6BE5B80D2992F6A700C80A2C /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				6B12EA192CE22CF4009E21D9 /* Mapper */,
+				6BC9CE9F29944A6E00A15E20 /* Models */,
+				6BE5B8102992F6CF00C80A2C /* Cell */,
+				6BE5B80E2992F6B400C80A2C /* SearchViewController.swift */,
+				6BE5B8152992FEA600C80A2C /* SearchView.swift */,
+				6BC9CE9D29944A1800A15E20 /* SearchPresenter.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		6BE5B8102992F6CF00C80A2C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				6BE5B8112992F8D500C80A2C /* SearchCell.xib */,
+				6BE5B8132992FA5900C80A2C /* SearchCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		6BF2F7512991AEFC0084B307 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6BF2F7522991AF100084B307 /* StationSelectionType.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6BF40E732985309F0042DEDB = {
+			isa = PBXGroup;
+			children = (
+				6BF40E7E2985309F0042DEDB /* Ryanair */,
+				6BF40E95298530A00042DEDB /* RyanairTests */,
+				6BF40E9F298530A00042DEDB /* RyanairUITests */,
+				6BF40E7D2985309F0042DEDB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6BF40E7D2985309F0042DEDB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6BF40E7C2985309F0042DEDB /* Ryanair.app */,
+				6BF40E92298530A00042DEDB /* RyanairTests.xctest */,
+				6BF40E9C298530A00042DEDB /* RyanairUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6BF40E7E2985309F0042DEDB /* Ryanair */ = {
+			isa = PBXGroup;
+			children = (
+				6BF40E8D298530A00042DEDB /* Info.plist */,
+				6B3DA7FF2CE5101E008435FF /* AppDelegate.swift */,
+				6BF40E812985309F0042DEDB /* SceneDelegate.swift */,
+				6BF40E88298530A00042DEDB /* Assets.xcassets */,
+				6BF40E852985309F0042DEDB /* Main.storyboard */,
+				6BF40EAF298531450042DEDB /* Business */,
+				6B5760C0298E7B0C00E524B2 /* Presentation */,
+				6BC9CEA229944ED600A15E20 /* Utils */,
+			);
+			path = Ryanair;
+			sourceTree = "<group>";
+		};
+		6BF40E95298530A00042DEDB /* RyanairTests */ = {
+			isa = PBXGroup;
+			children = (
+				6B487A8329A22D48000E959F /* Business */,
+				6BF40E96298530A00042DEDB /* RyanairTests.swift */,
+			);
+			path = RyanairTests;
+			sourceTree = "<group>";
+		};
+		6BF40E9F298530A00042DEDB /* RyanairUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6BF40EA0298530A00042DEDB /* RyanairUITests.swift */,
+				6BF40EA2298530A00042DEDB /* RyanairUITestsLaunchTests.swift */,
+			);
+			path = RyanairUITests;
+			sourceTree = "<group>";
+		};
+		6BF40EAF298531450042DEDB /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				6B12EA2E2CE23E49009E21D9 /* Navigator */,
+				6B12EA2B2CE23B11009E21D9 /* Coordinator */,
+				6B12EA2A2CE23AB5009E21D9 /* Assembly */,
+				6B661AE82986D26700226DED /* UseCases */,
+				6B661AE52986D20D00226DED /* Container */,
+				6BF40EB7298537800042DEDB /* Repository */,
+				6BF40EB6298537790042DEDB /* Service */,
+				6BF40EB02985314E0042DEDB /* Models */,
+				6B661ADF2986C9E400226DED /* PathBuilder.swift */,
+			);
+			path = Business;
+			sourceTree = "<group>";
+		};
+		6BF40EB02985314E0042DEDB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6BF40EB12985315D0042DEDB /* Station.swift */,
+				6BF40EBA298538180042DEDB /* FlightSearch.swift */,
+				6B661ADD2986C92100226DED /* Trips.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6BF40EB6298537790042DEDB /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				6BF40EB8298537A40042DEDB /* SearchFlightsService.swift */,
+				6B661AE12986CA6800226DED /* BaseService.swift */,
+				6B5760C2298FB0E500E524B2 /* StationsService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		6BF40EB7298537800042DEDB /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				6B661AE32986D14100226DED /* DataRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6BF40E7B2985309F0042DEDB /* Ryanair */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BF40EA6298530A00042DEDB /* Build configuration list for PBXNativeTarget "Ryanair" */;
+			buildPhases = (
+				6BF40E782985309F0042DEDB /* Sources */,
+				6BF40E792985309F0042DEDB /* Frameworks */,
+				6BF40E7A2985309F0042DEDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Ryanair;
+			packageProductDependencies = (
+				6BF40EB4298531820042DEDB /* Alamofire */,
+				6B12EA1F2CE23194009E21D9 /* Swinject */,
+				6B12EA222CE231A0009E21D9 /* SwinjectStoryboard */,
+			);
+			productName = Ryanair;
+			productReference = 6BF40E7C2985309F0042DEDB /* Ryanair.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6BF40E91298530A00042DEDB /* RyanairTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BF40EA9298530A00042DEDB /* Build configuration list for PBXNativeTarget "RyanairTests" */;
+			buildPhases = (
+				6BF40E8E298530A00042DEDB /* Sources */,
+				6BF40E8F298530A00042DEDB /* Frameworks */,
+				6BF40E90298530A00042DEDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6BF40E94298530A00042DEDB /* PBXTargetDependency */,
+			);
+			name = RyanairTests;
+			productName = RyanairTests;
+			productReference = 6BF40E92298530A00042DEDB /* RyanairTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6BF40E9B298530A00042DEDB /* RyanairUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BF40EAC298530A00042DEDB /* Build configuration list for PBXNativeTarget "RyanairUITests" */;
+			buildPhases = (
+				6BF40E98298530A00042DEDB /* Sources */,
+				6BF40E99298530A00042DEDB /* Frameworks */,
+				6BF40E9A298530A00042DEDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6BF40E9E298530A00042DEDB /* PBXTargetDependency */,
+			);
+			name = RyanairUITests;
+			productName = RyanairUITests;
+			productReference = 6BF40E9C298530A00042DEDB /* RyanairUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6BF40E742985309F0042DEDB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1610;
+				TargetAttributes = {
+					6BF40E7B2985309F0042DEDB = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					6BF40E91298530A00042DEDB = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 6BF40E7B2985309F0042DEDB;
+					};
+					6BF40E9B298530A00042DEDB = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 6BF40E7B2985309F0042DEDB;
+					};
+				};
+			};
+			buildConfigurationList = 6BF40E772985309F0042DEDB /* Build configuration list for PBXProject "Ryanair" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6BF40E732985309F0042DEDB;
+			packageReferences = (
+				6BF40EB3298531820042DEDB /* XCRemoteSwiftPackageReference "Alamofire" */,
+				6B12EA1E2CE23194009E21D9 /* XCRemoteSwiftPackageReference "Swinject" */,
+				6B12EA212CE231A0009E21D9 /* XCRemoteSwiftPackageReference "SwinjectStoryboard" */,
+			);
+			productRefGroup = 6BF40E7D2985309F0042DEDB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6BF40E7B2985309F0042DEDB /* Ryanair */,
+				6BF40E91298530A00042DEDB /* RyanairTests */,
+				6BF40E9B298530A00042DEDB /* RyanairUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6BF40E7A2985309F0042DEDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BE5B8122992F8D500C80A2C /* SearchCell.xib in Resources */,
+				6BF40E89298530A00042DEDB /* Assets.xcassets in Resources */,
+				6BF2F7502991A9DF0084B307 /* StationCell.xib in Resources */,
+				6BF40E872985309F0042DEDB /* Main.storyboard in Resources */,
+				6B6EB1B429957F7A009C5C83 /* Search.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BF40E90298530A00042DEDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BF40E9A298530A00042DEDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6BF40E782985309F0042DEDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B12EA152CE22B67009E21D9 /* BaseView.swift in Sources */,
+				6B12EA1B2CE22DA4009E21D9 /* SearchMapper.swift in Sources */,
+				6B12EA1D2CE22DC0009E21D9 /* SearchMapperProtocol.swift in Sources */,
+				6B12EA182CE22BDD009E21D9 /* BasePresenter.swift in Sources */,
+				6BC9CEA429944EE100A15E20 /* DateFormatter.swift in Sources */,
+				6B12EA252CE23420009E21D9 /* UseCasesAssembly.swift in Sources */,
+				6B12EA302CE23E54009E21D9 /* Navigator.swift in Sources */,
+				6B12EA132CE22AE7009E21D9 /* Presenter.swift in Sources */,
+				6BE342C52CE2886C00AEEF3D /* ProfileCoordinatorAssembly.swift in Sources */,
+				6B661AE02986C9E400226DED /* PathBuilder.swift in Sources */,
+				6B5760D5298FBA0500E524B2 /* FormPresenter.swift in Sources */,
+				6B5760C3298FB0E500E524B2 /* StationsService.swift in Sources */,
+				6B661AE42986D14100226DED /* DataRepository.swift in Sources */,
+				6BE5B8162992FEA600C80A2C /* SearchView.swift in Sources */,
+				6B12EA272CE234B8009E21D9 /* ViewControllerAssembly.swift in Sources */,
+				6BF40E842985309F0042DEDB /* FormViewController.swift in Sources */,
+				6B3DA8002CE5101E008435FF /* AppDelegate.swift in Sources */,
+				6BF40EBB298538180042DEDB /* FlightSearch.swift in Sources */,
+				6BC9CE9E29944A1800A15E20 /* SearchPresenter.swift in Sources */,
+				6BF40EB9298537A40042DEDB /* SearchFlightsService.swift in Sources */,
+				6B661AEA2986D28600226DED /* UseCaseSearchFlights.swift in Sources */,
+				6BE342C32CE2823100AEEF3D /* RepositoryAssembly.swift in Sources */,
+				6B5760CE298FB53A00E524B2 /* StationsPresenter.swift in Sources */,
+				6B12EA332CE23EA2009E21D9 /* BaseViewController.swift in Sources */,
+				6BE5B80C2992F2D200C80A2C /* FormView.swift in Sources */,
+				6BC9CEA129944A8600A15E20 /* SearchModel.swift in Sources */,
+				6BF40EB22985315D0042DEDB /* Station.swift in Sources */,
+				6BE5B80F2992F6B400C80A2C /* SearchViewController.swift in Sources */,
+				6B12EA2D2CE23B19009E21D9 /* AppCoordinator.swift in Sources */,
+				6B661ADE2986C92100226DED /* Trips.swift in Sources */,
+				6BF40E822985309F0042DEDB /* SceneDelegate.swift in Sources */,
+				6B12EA292CE2361B009E21D9 /* MappersAssembly.swift in Sources */,
+				6B661AE72986D22800226DED /* ServiceAssembly.swift in Sources */,
+				6B661AE22986CA6800226DED /* BaseService.swift in Sources */,
+				6B5760C7298FB32A00E524B2 /* StationsViewController.swift in Sources */,
+				6BF2F7532991AF100084B307 /* StationSelectionType.swift in Sources */,
+				6B12EA362CE2432B009E21D9 /* ProfileCoordinator.swift in Sources */,
+				6B5760CB298FB41C00E524B2 /* StationCell.swift in Sources */,
+				6B5760C5298FB23600E524B2 /* UseCaseGetStations.swift in Sources */,
+				6B5760D0298FB5F700E524B2 /* StationsView.swift in Sources */,
+				6BE5B8142992FA5900C80A2C /* SearchCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BF40E8E298530A00042DEDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BF40E97298530A00042DEDB /* RyanairTests.swift in Sources */,
+				6B487A8529A22D56000E959F /* SearchFlightsServiceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BF40E98298530A00042DEDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BF40EA1298530A00042DEDB /* RyanairUITests.swift in Sources */,
+				6BF40EA3298530A00042DEDB /* RyanairUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6BF40E94298530A00042DEDB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6BF40E7B2985309F0042DEDB /* Ryanair */;
+			targetProxy = 6BF40E93298530A00042DEDB /* PBXContainerItemProxy */;
+		};
+		6BF40E9E298530A00042DEDB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6BF40E7B2985309F0042DEDB /* Ryanair */;
+			targetProxy = 6BF40E9D298530A00042DEDB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6BF40E852985309F0042DEDB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6BF40E862985309F0042DEDB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6BF40EA4298530A00042DEDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6BF40EA5298530A00042DEDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6BF40EA7298530A00042DEDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Ryanair/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = personal.Ryanair;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6BF40EA8298530A00042DEDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Ryanair/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = personal.Ryanair;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6BF40EAA298530A00042DEDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = personal.RyanairTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ryanair.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Ryanair";
+			};
+			name = Debug;
+		};
+		6BF40EAB298530A00042DEDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = personal.RyanairTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ryanair.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Ryanair";
+			};
+			name = Release;
+		};
+		6BF40EAD298530A00042DEDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = personal.RyanairUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Ryanair;
+			};
+			name = Debug;
+		};
+		6BF40EAE298530A00042DEDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = personal.RyanairUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Ryanair;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6BF40E772985309F0042DEDB /* Build configuration list for PBXProject "Ryanair" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BF40EA4298530A00042DEDB /* Debug */,
+				6BF40EA5298530A00042DEDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6BF40EA6298530A00042DEDB /* Build configuration list for PBXNativeTarget "Ryanair" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BF40EA7298530A00042DEDB /* Debug */,
+				6BF40EA8298530A00042DEDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6BF40EA9298530A00042DEDB /* Build configuration list for PBXNativeTarget "RyanairTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BF40EAA298530A00042DEDB /* Debug */,
+				6BF40EAB298530A00042DEDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6BF40EAC298530A00042DEDB /* Build configuration list for PBXNativeTarget "RyanairUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BF40EAD298530A00042DEDB /* Debug */,
+				6BF40EAE298530A00042DEDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6B12EA1E2CE23194009E21D9 /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.9.1;
+			};
+		};
+		6B12EA212CE231A0009E21D9 /* XCRemoteSwiftPackageReference "SwinjectStoryboard" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/SwinjectStoryboard.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.3;
+			};
+		};
+		6BF40EB3298531820042DEDB /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6B12EA1F2CE23194009E21D9 /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6B12EA1E2CE23194009E21D9 /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+		6B12EA222CE231A0009E21D9 /* SwinjectStoryboard */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6B12EA212CE231A0009E21D9 /* XCRemoteSwiftPackageReference "SwinjectStoryboard" */;
+			productName = SwinjectStoryboard;
+		};
+		6BF40EB4298531820042DEDB /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6BF40EB3298531820042DEDB /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 6BF40E742985309F0042DEDB /* Project object */;
+}
